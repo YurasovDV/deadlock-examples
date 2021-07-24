@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConcurrentUpdateLocks", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockOnIndexKey", "LockOnIndexKey\LockOnIndexKey.csproj", "{5AB89E87-C9A3-4493-8C70-564FA3EFCA3E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleThreadDeadlock", "SingleThreadDeadlock\SingleThreadDeadlock\SingleThreadDeadlock.csproj", "{52663543-CA63-46CA-AEDD-462892D0A842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleThreadDeadlock", "SingleThreadDeadlock\SingleThreadDeadlock.csproj", "{52663543-CA63-46CA-AEDD-462892D0A842}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleObjectLock", "DoubleObjectLock\DoubleObjectLock.csproj", "{95407725-87E6-4565-B2D9-99045EA7E298}"
 EndProject
