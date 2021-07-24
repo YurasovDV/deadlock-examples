@@ -14,19 +14,19 @@ namespace DeadlockForm
         private void btnLockForSure(object sender, EventArgs e)
         {
             var someValue = GetVal().Result;
-            (sender as Button).Text = (sender as Button).Text + someValue.ToString();
+            (sender as Button).Text = (sender as Button).Text + $", result: {someValue}";
         }
 
         private void btNoLock_Click(object sender, EventArgs e)
         {
             var someValue = Task.Run(() => GetVal()).Result;
-            (sender as Button).Text = (sender as Button).Text + someValue.ToString();
+            (sender as Button).Text = (sender as Button).Text + $", result: {someValue}";
         }
 
         private async void btNoLockCorrect_Click(object sender, EventArgs e)
         {
             var someValue = await GetVal();
-            (sender as Button).Text = (sender as Button).Text + someValue.ToString();
+            (sender as Button).Text = (sender as Button).Text + $", result: {someValue}";
         }
 
         private async Task<int> GetVal()
