@@ -18,3 +18,5 @@ The first transaction puts exclusive lock on one row and corresponding noncluste
 The problem here is that attempt to update different rows does not lock two transactions, but if the change is affecting indexed properties, there is possibility to get involved in fight over index keys. It's especially nasty when it happens in different order.
 Solution: if there is identical SQL for both transactions, for example, 1) SELECT(UPDLOCK) 2) UPDATE, then you can use SERIALIZABLE isolation level since it won't allow to place U locks on index pages affected.
 If you are dealing with the situation like the one in repo, I would go for sp_getapplock with custom sync object in order to forbid placing locks on nonclustered and clustered indexes altogether.
+6. SingleThreadDeadlock <br/>
+Threads tries to join to itself so to end its execution it waits for end of its execution
