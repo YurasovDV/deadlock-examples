@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Threading;
 
 namespace DoubleObjectLock
@@ -12,9 +12,11 @@ namespace DoubleObjectLock
         {
             Thread t1 = new Thread(ThreadOne);
             Thread t2 = new Thread(ThreadTwo);
-            Console.WriteLine("start");
+            Console.WriteLine("Start");
             t1.Start();
             t2.Start();
+            t1.Join();
+            t2.Join();
             Console.WriteLine("End");
             Console.ReadLine();
         }

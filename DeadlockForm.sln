@@ -7,13 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadlockForm", "DeadlockFor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonitorAwait", "MonitorAwait\MonitorAwait.csproj", "{B67F10A8-EDF4-41E8-92C4-9C30E820811D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleObjectLock", "DoubleObjectLock\DoubleObjectLock.csproj", "{702347A2-3119-4DAD-A3BB-C11A9DF4F5C8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConcurrentUpdateLocks", "DbConcurrentUpdateLocks\DbConcurrentUpdateLocks.csproj", "{D4A0AB58-4A21-4F71-AE35-8772611D6F69}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockOnIndexKey", "LockOnIndexKey\LockOnIndexKey.csproj", "{5AB89E87-C9A3-4493-8C70-564FA3EFCA3E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleThreadDeadlock", "SingleThreadDeadlock\SingleThreadDeadlock\SingleThreadDeadlock.csproj", "{52663543-CA63-46CA-AEDD-462892D0A842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleObjectLock", "DoubleObjectLock\DoubleObjectLock.csproj", "{95407725-87E6-4565-B2D9-99045EA7E298}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,6 @@ Global
 		{B67F10A8-EDF4-41E8-92C4-9C30E820811D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B67F10A8-EDF4-41E8-92C4-9C30E820811D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B67F10A8-EDF4-41E8-92C4-9C30E820811D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{702347A2-3119-4DAD-A3BB-C11A9DF4F5C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{702347A2-3119-4DAD-A3BB-C11A9DF4F5C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{702347A2-3119-4DAD-A3BB-C11A9DF4F5C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{702347A2-3119-4DAD-A3BB-C11A9DF4F5C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D4A0AB58-4A21-4F71-AE35-8772611D6F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D4A0AB58-4A21-4F71-AE35-8772611D6F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4A0AB58-4A21-4F71-AE35-8772611D6F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{52663543-CA63-46CA-AEDD-462892D0A842}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52663543-CA63-46CA-AEDD-462892D0A842}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52663543-CA63-46CA-AEDD-462892D0A842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95407725-87E6-4565-B2D9-99045EA7E298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95407725-87E6-4565-B2D9-99045EA7E298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95407725-87E6-4565-B2D9-99045EA7E298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95407725-87E6-4565-B2D9-99045EA7E298}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
