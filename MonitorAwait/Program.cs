@@ -6,15 +6,17 @@ namespace MonitorAwait
 {
     class Program
     {
-        static object lockObject = new object();
+        private static object lockObject = new object();
 
         static async Task Main(string[] args)
         {
             Monitor.Enter(lockObject);
-            Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
-            var value = await GetValue();
-            Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine($"ThreadId = {Thread.CurrentThread.ManagedThreadId}");
+            _ = await GetValue();
+            Console.WriteLine($"ThreadId = {Thread.CurrentThread.ManagedThreadId}");
+            Console.WriteLine("Reentering lock");
             Monitor.Enter(lockObject);
+            Console.WriteLine("Never get here");
             Monitor.Exit(lockObject);
             Monitor.Exit(lockObject);
         }
