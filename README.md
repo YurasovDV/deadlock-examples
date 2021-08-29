@@ -19,4 +19,4 @@ The problem here is that attempt to update different rows does not lock two tran
 Solution: if there is identical SQL for both transactions, for example, 1) SELECT(UPDLOCK) 2) UPDATE, then you can use SERIALIZABLE isolation level since it won't allow to place U locks on index pages affected.
 If you are dealing with the situation like the one in repo, I would go for sp_getapplock with custom sync object in order to forbid placing locks on nonclustered and clustered indexes altogether.
 6. SingleThreadDeadlock <br/>
-Threads tries to join to itself so to end its execution it waits for end of its execution
+Threads tries to join to itself so to end its execution it waits for end of its execution, purely fictional example
